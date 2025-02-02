@@ -2,7 +2,7 @@
 
 A sleek, responsive web application that generates random pieces of advice using the Advice Slip API. Built with HTML, CSS, and vanilla JavaScript.
 
-![Advice Generator App Screenshot](screenshot.png)
+![Advice Generator App Screenshot](./screenshot.png)
 
 ## Features
 
