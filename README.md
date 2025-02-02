@@ -1,93 +1,105 @@
-# Frontend Mentor - Advice generator app
+# Advice Generator App
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+A sleek, responsive web application that generates random pieces of advice using the Advice Slip API. Built with HTML, CSS, and vanilla JavaScript.
 
-## Welcome! 👋
+![Advice Generator App Screenshot](screenshot.png)
 
-Thanks for checking out this front-end coding challenge.
+## Features
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- Random advice generation with a single click
+- Responsive design that works on both desktop and mobile devices
+- Loading state indication with animated dots
+- Error handling with user-friendly messages
+- Clean and modern UI with smooth hover effects
+- Automatic adjustment of divider image based on screen size
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## Technologies Used
 
-## The challenge
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- [Advice Slip API](https://api.adviceslip.com/)
+- Google Fonts (Manrope)
 
-Your challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
+## Live Demo
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+[View Live Demo](https://chihaadam.github.io/advice-generator-app/)
 
-Your users should be able to:
+## Setup and Installation
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ChihaAdam/advice-generator-app.git
+   ```
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+2. Navigate to the project directory:
+   ```bash
+   cd advice-generator-app
+   ```
 
-## Where to find everything
+3. Open `index.html` in your preferred browser to run the application locally.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+## Usage
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+- The app automatically generates a piece of advice when loaded
+- Click the dice button to generate a new piece of advice
+- The advice ID is displayed at the top of the card
+- Loading state is indicated by animated dots
+- Error messages are displayed in red if there's a connection issue
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## Features in Detail
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Responsive Design
+- Mobile-first approach
+- Automatically switches between mobile and desktop divider images
+- Responsive typography and spacing
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### User Interface
+- Hover effects on the dice button
+- Disabled state styling during advice fetch
+- Clean layout with proper spacing
+- Color scheme:
+  - Background: Dark Blue (hsl(218, 23%, 16%))
+  - Advice Card: Dark Grayish Blue (hsl(217, 19%, 24%))
+  - Text: Light Cyan (hsl(193, 38%, 86%))
+  - Accent: Neon Green (hsl(150, 100%, 66%))
 
-## Building your project
+### Error Handling
+- Timeout after 20 seconds
+- User-friendly error messages
+- Visual indication of errors with red text
+- Console logging for debugging
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## Development
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### CSS Structure
+- Uses CSS custom properties for colors
+- Flexbox for layout
+- Google Fonts integration
+- Smooth transitions and hover effects
 
-## Deploying your project
+### JavaScript Features
+- Async/await for API calls
+- Error handling with try/catch
+- Loading state management
+- DOM manipulation
+- Event listeners for user interaction
+- Responsive image switching
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+## Contributing
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## License
 
-## Create a custom `README.md`
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## Acknowledgments
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- [Frontend Mentor](https://www.frontendmentor.io/) for the project challenge
+- [Advice Slip API](https://api.adviceslip.com/) for providing the advice data
+- Google Fonts for the Manrope font family
