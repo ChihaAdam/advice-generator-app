@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+body{
+    background-color: hsl(218, 23%, 16%);
+    display: grid;
+    align-content: center;
+    height:100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    padding:20px;
+    max-width: 500px;
+    margin:auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.174);
+    gap:32px;
+}
+.container > *{
+    margin: 0px;
+    font-family: Manrope;
+    max-width: 90%;
+}
+#idPlacement{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    color: hsl(150, 100%, 66%);
+    font-size:16px;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+#adviceIDLabel{
+    font-size: 15px;
+}
+#divider{
+    margin-bottom: 40px;
+}
+#advice{
+    color:hsl(193, 38%, 86%);
+    font-weight: 800;
+    line-height: 150%;
+    font-size: 24px;
+}
+#btn{
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    margin: auto;
+    transform: translateY(-27.5px);
+    transition: all 0.3s ease;
+}
+#btn:disabled {
+    background: grey;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+#btn:hover:not(:disabled){
+    background-color: hsl(150, 100%,75%);
+    box-shadow: 0px 0px 15px 10px hsla(150, 100%, 66%, 0.258);
+}
