@@ -27,7 +27,7 @@ const adviceFetch = async () => {
         const data=await response.json();
         const adviceBody=data.slip;
         clearInterval(loadingInterval);
-        advice.textContent=adviceBody.advice;
+        advice.textContent=`"${adviceBody.advice}"`;
         adviceID.textContent=`#${adviceBody.id}`;
         label.textContent="ADVICE";
     }
